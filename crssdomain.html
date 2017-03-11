@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Fine-grained sketch-based image retrieval</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yi Li">
+    <meta name="author" content="Yi Li">
+	<meta name="keywords" content="Yi Li, qmul, Computer Vision">
+    <!-- Le styles -->
+    <link href="Yi Li's Materials/bootstrap.css" rel="stylesheet">
+	
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="Yi Li's Materials/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://www.eecs.qmul.ac.uk/assets/ico/favicon.ico">	
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html"><strong>Home</strong></a></li>
+            </ul>
+			<a href="http://www.qmul.ac.uk/" target="_blank"><img src="Yi Li's Materials/logo_QMUL.png" height="80" align="right" width="145"></a>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+		<section>
+		<h1>Fine-grained sketch-based image retrieval by matching deformable part models </h1>
+		<hr>
+                <br>
+                <br>
+                <img src="Yi Li's Materials/fgPipeline.png" alt="Pipeline" width="70%" align='middle'>
+                <br>
+                <br>
+		<h2>Abstract</h2>
+                An important characteristic of sketches, compared with text, rests with their ability
+to intrinsically capture object appearance and structure. Nonetheless, akin to traditional
+text-based image retrieval, conventional sketch-based image retrieval (SBIR) principally
+focuses on retrieving images of the same category, neglecting the fine-grained characteristics
+of sketches. In this paper, we advocate the expressiveness of sketches and examine
+their efficacy under a novel fine-grained SBIR framework. In particular, we study how
+sketches enable fine-grained retrieval within object categories. Key to this problem is
+introducing a mid-level sketch representation that not only captures object pose, but also
+possesses the ability to traverse sketch and image domains. Specifically, we learn deformable
+part-based model (DPM) as a mid-level representation to discover and encode
+the various poses in sketch and image domains independently, after which graph matching
+is performed on DPMs to establish pose correspondences across the two domains.
+We further propose an SBIR dataset that covers the unique aspects of fine-grained SBIR.
+Through in-depth experiments, we demonstrate the superior performance of our SBIR
+framework, and showcase its unique ability in fine-grained retrieval.<br>
+<h2>Dataset</h2>
+<img src="Yi Li's Materials/markings.png" alt="Markings" width="70%" align='middle'>
+<br><br>
+We have manually annotated a cross-domain dataset that contains sketch-image pairwise
+similarity annotations. Specifically, 6 sketches and 60 images are selected from TU-Berlin sketch dataset and PASCAL VOC image dataset respectively for each category (14 categories in total), and sketch-image pairs have their similarities manually annotated. For each
+sketch-image pair (14 × 6 × 60 = 5, 040 pairs in total), we score its similarity in terms of four
+independent criteria: (i) viewpoint (V), e.g., left or right, (ii) zoom (Z), e.g., head only or whole
+body; (iii) configuration (C), e.g., position and shape of the limbs; (iv) body feature (B), e.g., fat
+or thin. For each criterion, we annotate (5, 040 × 4 = 20, 160 annotations in total) three levels
+of similarity: 0 for not similar, 1 for similar and 2 for very similar. Above are some examples of sketch-image pair similarity annotations. <br>
+
+		<h2>Download</h2>
+<a href='http://www.eecs.qmul.ac.uk/~tmh/papers/li2014sbirDpm.pdf'>[Paper]</a>
+<a href='bibtex.html'>[Bibtex]</a> </li></ul><br>
+<a href="https://github.com/panly099/fine-graind-SBIR">[Code&Testing dataset]</a>
+<br>
+
+<h2>Results</h2>
+<h4>Airplane</h4>
+<img src="Yi Li's Materials/airplane.png" alt="Markings" width="70%" align='middle'>
+<hr>
+<h4>Horse</h4>
+<img src="Yi Li's Materials/horse.png" alt="Markings" width="70%" align='middle'>
+<hr>
+<h4>Motorbike</h4>
+<img src="Yi Li's Materials/motorbike.png" alt="Markings" width="70%" align='middle'>
+<hr>
+
+		<!-- Footer ================================================== -->
+        <footer class="footer">
+			<p class="pull-right"><a href="#HOME">Back to top</a></p>
+            <p><small>Updated Jan 2016</small></p>
+            <p><small>Page created using <a href="http://twitter.github.com/bootstrap" target="_blank">bootstrap</a></small></p>
+        </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Yi Li's Materials/jquery.html"></script>
+    <script src="Yi Li's Materials/bootstrap-transition.html"></script>
+    <script src="Yi Li's Materials/bootstrap-alert.html"></script>
+    <script src="Yi Li's Materials/bootstrap-modal.html"></script>
+    <script src="Yi Li's Materials/bootstrap-dropdown.html"></script>
+    <script src="Yi Li's Materials/bootstrap-scrollspy.html"></script>
+    <script src="Yi Li's Materials/bootstrap-tab.html"></script>
+    <script src="Yi Li's Materials/bootstrap-tooltip.html"></script>
+    <script src="Yi Li's Materials/bootstrap-popover.html"></script>
+    <script src="Yi Li's Materials/bootstrap-button.html"></script>
+    <script src="Yi Li's Materials/bootstrap-collapse.html"></script>
+    <script src="Yi Li's Materials/bootstrap-carousel.html"></script>
+    <script src="Yi Li's Materials/bootstrap-typeahead.html"></script>
+
+ 
+
+</body></html>
+               

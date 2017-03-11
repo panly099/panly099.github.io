@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Sketch synthesis from deformable stroke models</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yi Li">
+    <meta name="author" content="Yi Li">
+	<meta name="keywords" content="Yi Li, qmul, Computer Vision">
+    <!-- Le styles -->
+    <link href="Yi Li's Materials/bootstrap.css" rel="stylesheet">
+	
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <link href="Yi Li's Materials/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="http://www.eecs.qmul.ac.uk/assets/ico/favicon.ico">	
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://www.eecs.qmul.ac.uk/assets/ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="index.html"><strong>Home</strong></a></li>
+            </ul>
+			<a href="http://www.qmul.ac.uk/" target="_blank"><img src="Yi Li's Materials/logo_QMUL.png" height="80" align="right" width="145"></a>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container">
+		<section>
+		<h1>Free-hand sketch synthesis with deformable stroke models </h1>
+		<hr>
+                <br>
+                <br>
+                <img src="Yi Li's Materials/pipeline.png" alt="Pipeline" >
+                <br>
+                <br>
+		<h2>Abstract</h2>
+                We present a generative model which can automatically summarize the stroke composition of free-hand sketches of a given category. When our model is fit to a collection of 
+sketches with similar poses, it discovers and learns the
+structure and appearance of a set of coherent parts, with each part represented by a group of strokes. It represents
+both consistent (topology) as well as diverse aspects (structure and appearance variations)
+of each sketch category. Key to the success of our model are
+important insights learned from a comprehensive study performed on
+human stroke data. 
+By fitting this model to images, we are able to
+synthesize visually similar and pleasant free-hand sketches. 
+		<h2>Download</h2>
+<a href ="https://arxiv.org/pdf/1510.02644v1.pdf">[arXiv]</a>
+<a href="https://github.com/panly099/sketchSynthesis">[code&dataset]</a>
+ 		<h4>An object&part annotation tool (involved in code, producing pascal voc annotation XML)</h4>
+                <img src="Yi Li's Materials/annoTool.png" alt="annoTool" style="width: 50%">                
+                <h2>Result</h2>
+ 		<h4>Application</h4>
+                <img src="Yi Li's Materials/demo.gif" alt="appDemo" >
+                <h4>Synthesis results</h4>
+                <img src="Yi Li's Materials/synthesisAll.png" alt="Results" style="max-width:80%">
+                <br>
+                <br>
+                </section>
+		
+		<br>
+		<br>
+ 
+		<!-- Footer ================================================== -->
+        <footer class="footer">
+			<p class="pull-right"><a href="#HOME">Back to top</a></p>
+            <p><small>Updated Sep 2015</small></p>
+            <p><small>Page created using <a href="http://twitter.github.com/bootstrap" target="_blank">bootstrap</a></small></p>
+        </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="Yi Li's Materials/jquery.html"></script>
+    <script src="Yi Li's Materials/bootstrap-transition.html"></script>
+    <script src="Yi Li's Materials/bootstrap-alert.html"></script>
+    <script src="Yi Li's Materials/bootstrap-modal.html"></script>
+    <script src="Yi Li's Materials/bootstrap-dropdown.html"></script>
+    <script src="Yi Li's Materials/bootstrap-scrollspy.html"></script>
+    <script src="Yi Li's Materials/bootstrap-tab.html"></script>
+    <script src="Yi Li's Materials/bootstrap-tooltip.html"></script>
+    <script src="Yi Li's Materials/bootstrap-popover.html"></script>
+    <script src="Yi Li's Materials/bootstrap-button.html"></script>
+    <script src="Yi Li's Materials/bootstrap-collapse.html"></script>
+    <script src="Yi Li's Materials/bootstrap-carousel.html"></script>
+    <script src="Yi Li's Materials/bootstrap-typeahead.html"></script>
+
+ 
+
+</body></html>
+               
